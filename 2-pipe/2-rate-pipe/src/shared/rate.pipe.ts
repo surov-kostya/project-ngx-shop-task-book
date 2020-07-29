@@ -4,5 +4,5 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'rate',
 })
 export class RatePipe implements PipeTransform {
-  public transform(): void {}
+  public transform() {}
 }

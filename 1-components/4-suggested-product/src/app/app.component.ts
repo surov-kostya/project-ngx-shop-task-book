@@ -1,4 +1,4 @@
-import { productData } from '../mocks/mock-product';
+import { productData } from '../../../../shared/mocks/mock-product';
 import { Component } from '@angular/core';
 
 @Component({

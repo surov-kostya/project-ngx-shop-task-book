@@ -74,6 +74,42 @@
       "path": "./3-directive/3-category-list-component/src/tsconfig.spec.json"
     },
     {
+      "path": "./3-directive/4-banner-component/src/tsconfig.app.json"
+    },
+    {
+      "path": "./3-directive/4-banner-component/src/tsconfig.spec.json"
+    },
+    {
+      "path": "./3-directive/5-slider-component/src/tsconfig.app.json"
+    },
+    {
+      "path": "./3-directive/5-slider-component/src/tsconfig.spec.json"
+    },
+    {
+      "path": "./3-directive/6-home-category-dropdown/src/tsconfig.app.json"
+    },
+    {
+      "path": "./3-directive/6-home-category-dropdown/src/tsconfig.spec.json"
+    },
+    {
+      "path": "./3-directive/7-product-information-component/src/tsconfig.app.json"
+    },
+    {
+      "path": "./3-directive/7-product-information-component/src/tsconfig.spec.json"
+    },
+    {
+      "path": "./3-directive/8-product-description-component/src/tsconfig.app.json"
+    },
+    {
+      "path": "./3-directive/8-product-description-component/src/tsconfig.spec.json"
+    },
+    {
+      "path": "./3-directive/0-star-rating/src/tsconfig.app.json"
+    },
+    {
+      "path": "./3-directive/0-star-rating/src/tsconfig.spec.json"
+    },
+    {
       "path": "./4-services/1-http-and-interceptors/src/tsconfig.app.json"
     },
     {
@@ -96,6 +132,12 @@
     },
     {
       "path": "./4-services/4-local-storage-service/src/tsconfig.spec.json"
+    },
+    {
+      "path": "./4-services/5-one-product-component/src/tsconfig.app.json"
+    },
+    {
+      "path": "./4-services/5-one-product-component/src/tsconfig.spec.json"
     },
     {
       "path": "./5-forms/1-controls-and-custom-controls/src/tsconfig.app.json"

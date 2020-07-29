@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+import { IProduct } from '../../../../shared/interfaces/product.interface';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'product-service';
+  public title = 'Сервис получения рекомендуемых товаров';
 }

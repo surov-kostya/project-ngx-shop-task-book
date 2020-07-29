@@ -72,7 +72,10 @@
 
   <div class="content-wrap" style="padding-top: 0;">
     <div class="content-block">
-      <ngx-shop-products (redirectTo)="redirectTo($event)"></ngx-shop-products>
+      <ngx-shop-products
+        [suggestedProducts]="suggestedProducts"
+        (redirectTo)="redirectTo($event)"
+      ></ngx-shop-products>
     </div>
     <div class="terminal">
       <pre>

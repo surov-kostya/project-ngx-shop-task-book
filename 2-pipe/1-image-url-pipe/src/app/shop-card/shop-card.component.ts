@@ -1,6 +1,4 @@
-import { IProduct } from '../../../../../shared/interfaces/product.interface';
-import { expProducts } from '../../../../../shared/mocks/products';
-import { Component, Output, EventEmitter, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-shop-card',

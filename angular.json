@@ -1441,6 +1441,419 @@
           }
         }
       }
+    },
+    "3-directive_6-home-category-dropdown": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
+      "root": "3-directive/6-home-category-dropdown",
+      "sourceRoot": "3-directive/6-home-category-dropdown/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/3-directive_6-home-category-dropdown",
+            "index": "shared/index.html",
+            "main": "3-directive/6-home-category-dropdown/src/main.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/6-home-category-dropdown/src/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "3-directive/6-home-category-dropdown/src/favicon.ico",
+              "3-directive/6-home-category-dropdown/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "3-directive_6-home-category-dropdown:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "3-directive/6-home-category-dropdown/src/test.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/6-home-category-dropdown/src/tsconfig.spec.json",
+            "karmaConfig": "shared/karma.conf.js",
+            "assets": [
+              "3-directive/6-home-category-dropdown/src/favicon.ico",
+              "3-directive/6-home-category-dropdown/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "3-directive/6-home-category-dropdown/src/tsconfig.app.json",
+              "3-directive/6-home-category-dropdown/src/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "3-directive_5-slider-component": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
+      "root": "3-directive/5-slider-component",
+      "sourceRoot": "3-directive/5-slider-component/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/3-directive_5-slider-component",
+            "index": "shared/index.html",
+            "main": "3-directive/5-slider-component/src/main.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/5-slider-component/src/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "3-directive/5-slider-component/src/favicon.ico",
+              "3-directive/5-slider-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "3-directive_5-slider-component:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "3-directive/5-slider-component/src/test.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/5-slider-component/src/tsconfig.spec.json",
+            "karmaConfig": "shared/karma.conf.js",
+            "assets": [
+              "3-directive/5-slider-component/src/favicon.ico",
+              "3-directive/5-slider-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "3-directive/5-slider-component/src/tsconfig.app.json",
+              "3-directive/5-slider-component/src/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "3-directive_7-product-information-component": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
+      "root": "3-directive/7-product-information-component",
+      "sourceRoot": "3-directive/7-product-information-component/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/3-directive_7-product-information-component",
+            "index": "shared/index.html",
+            "main": "3-directive/7-product-information-component/src/main.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/7-product-information-component/src/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "3-directive/7-product-information-component/src/favicon.ico",
+              "3-directive/7-product-information-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "3-directive_7-product-information-component:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "3-directive/7-product-information-component/src/test.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/7-product-information-component/src/tsconfig.spec.json",
+            "karmaConfig": "shared/karma.conf.js",
+            "assets": [
+              "3-directive/7-product-information-component/src/favicon.ico",
+              "3-directive/7-product-information-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "3-directive/7-product-information-component/src/tsconfig.app.json",
+              "3-directive/7-product-information-component/src/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "3-directive_8-product-description-component": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
+      "root": "3-directive_8-product-description-component",
+      "sourceRoot": "3-directive/8-product-description-component/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/3-directive_8-product-description-component",
+            "index": "shared/index.html",
+            "main": "3-directive/8-product-description-component/src/main.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/8-product-description-component/src/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "3-directive/8-product-description-component/src/favicon.ico",
+              "3-directive/8-product-description-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "3-directive_8-product-description-component:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "3-directive/8-product-description-component/src/test.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/8-product-description-component/src/tsconfig.spec.json",
+            "karmaConfig": "shared/karma.conf.js",
+            "assets": [
+              "3-directive/8-product-description-component/src/favicon.ico",
+              "3-directive/8-product-description-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "3-directive/8-product-description-component/src/tsconfig.app.json",
+              "3-directive/8-product-description-component/src/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "3-directive_4-banner-component": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
+      "root": "3-directive/4-banner-component",
+      "sourceRoot": "3-directive/4-banner-component/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/3-directive/4-banner-component",
+            "index": "shared/index.html",
+            "main": "3-directive/4-banner-component/src/main.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/4-banner-component/src/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "3-directive/4-banner-component/src/favicon.ico",
+              "3-directive/4-banner-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "3-directive_4-banner-component:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "3-directive/4-banner-component/src/test.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/4-banner-component/src/tsconfig.spec.json",
+            "karmaConfig": "shared/karma.conf.js",
+            "assets": [
+              "3-directive/4-banner-component/src/favicon.ico",
+              "3-directive/4-banner-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "3-directive/4-banner-component/src/tsconfig.app.json",
+              "3-directive/4-banner-component/src/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "3-directive_0-star-rating": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
+      "root": "3-directive/0-star-rating",
+      "sourceRoot": "3-directive/0-star-rating/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/3-directive_0-star-rating",
+            "index": "shared/index.html",
+            "main": "3-directive/0-star-rating/src/main.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/0-star-rating/src/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "3-directive/0-star-rating/src/favicon.ico",
+              "3-directive/0-star-rating/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "3-directive_0-star-rating:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "3-directive/0-star-rating/src/test.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "3-directive/0-star-rating/src/tsconfig.spec.json",
+            "karmaConfig": "shared/karma.conf.js",
+            "assets": [
+              "3-directive/0-star-rating/src/favicon.ico",
+              "3-directive/0-star-rating/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "3-directive/0-star-rating/src/tsconfig.app.json",
+              "3-directive/0-star-rating/src/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "4-services_5-one-product-component": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
+      "root": "4-services/5-one-product-component",
+      "sourceRoot": "4-services/5-one-product-component/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/4-services_5-one-product-component",
+            "index": "shared/index.html",
+            "main": "4-services/5-one-product-component/src/main.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "4-services/5-one-product-component/src/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "4-services/5-one-product-component/src/favicon.ico",
+              "4-services/5-one-product-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "4-services_5-one-product-component:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "4-services/5-one-product-component/src/test.ts",
+            "polyfills": "shared/polyfills.ts",
+            "tsConfig": "4-services/5-one-product-component/src/tsconfig.spec.json",
+            "karmaConfig": "shared/karma.conf.js",
+            "assets": [
+              "4-services/5-one-product-component/src/favicon.ico",
+              "4-services/5-one-product-component/src/assets"
+            ],
+            "styles": ["shared/styles.sass"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "4-services/5-one-product-component/src/tsconfig.app.json",
+              "4-services/5-one-product-component/src/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
     }
   },
   "cli": {

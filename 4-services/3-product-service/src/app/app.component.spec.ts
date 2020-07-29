@@ -7,9 +7,9 @@ describe('AppComponent', () => {
       declarations: [AppComponent],
     }).compileComponents();
   }));
-  it(`should have as title 'product-service'`, () => {
+  it(`компонент должен иметь свойство title 'Сервис получения рекомендуемых товаров'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('product-service');
+    expect(app.title).toEqual('Сервис получения рекомендуемых товаров');
   });
 });

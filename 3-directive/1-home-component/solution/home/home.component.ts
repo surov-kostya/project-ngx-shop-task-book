@@ -1,4 +1,4 @@
-import { IProduct } from 'shared/interfaces/product.interface';
+import { IProduct } from '../../../../shared/interfaces/product.interface';
 import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({

@@ -29,18 +29,3 @@ describe('AppComponent', () => {
   });
 });
 
-// categories;
-
-//   it('компонент должен иметь метод cartProducts ', () => {
-//     expect((component as any).cartProducts).toBeTruthy();
-//   });
-//   it('компонент должен иметь метод removeProductFromCart', () => {
-//     expect((component as any).removeProductFromCart).toBeTruthy();
-//   });
-//   it('компонент должен иметь метод incrementProductInCart', () => {
-//     expect((component as any).incrementProductInCart).toBeTruthy();
-//   });
-//   it('компонент должен иметь метод  decrementProductInCart', () => {
-//     expect((component as any).decrementProductInCart).toBeTruthy();
-//   });
-// });

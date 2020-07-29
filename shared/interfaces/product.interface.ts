@@ -37,3 +37,6 @@ export interface IProductImage {
   url: string;
   source: string;
 }
+export interface IProductApi {
+  items: IProduct[];
+}

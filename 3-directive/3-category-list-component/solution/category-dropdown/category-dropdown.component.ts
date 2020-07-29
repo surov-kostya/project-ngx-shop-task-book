@@ -3,7 +3,6 @@ import {
   ISubCategory,
 } from './../../../../../shared/interfaces/categories.interface';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Subscribable } from 'rxjs';
 
 @Component({
   selector: 'ngx-shop-category-dropdown',

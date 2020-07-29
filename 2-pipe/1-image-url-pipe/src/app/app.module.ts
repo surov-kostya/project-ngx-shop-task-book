@@ -1,4 +1,4 @@
-import { ImgUrlPipe } from './pipe/img-url.pipe';
+import { ImgUrlPipe } from './../../solution/pipe/img-url.pipe';
 import { ShopCardComponent } from './shop-card/shop-card.component';
 
 import { BrowserModule } from '@angular/platform-browser';
