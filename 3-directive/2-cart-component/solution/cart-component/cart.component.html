@@ -11,13 +11,12 @@
           Ваш заказ был оформлен
         </div>
         <ngx-shop-cart-product
-          [disabled]="disabled"
           *ngFor="let product of cartProducts"
           [product]="product"
           (increment)="incrementProductInCart($event)"
           (decrement)="decrementProductInCart($event)"
           (remove)="removeProductFromCart($event)"
-          class='shop-cart'
+          class="shop-cart"
         ></ngx-shop-cart-product>
         <div
           *ngIf="disabled"

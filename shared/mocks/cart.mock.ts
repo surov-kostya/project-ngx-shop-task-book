@@ -1,3 +1,650 @@
+export const cartProducts = [
+  {
+    _id: 'kronstejn-dla-tv-mart-d4116-cernyj',
+    description:
+      'Кронштейн для ТВ Mart D4116 – универсальное комплектующее, с использованием которого можно надежно зафиксировать телевизор диагональю 10–64 дюйма на стене. Оно позволяет регулировать наклон и поворот устройства, транслирующего телесигнал. Крепление отличается простой установкой, справиться с этой задачей сможет каждый пользователь. Расстояние от стены до телевизора с использованием кронштейна для ТВ Mart D4116 может варьироваться от 11 до 27 см. Модель позволяет установить экран так, чтобы его одинаково хорошо было видно из любой точки комнаты.',
+    feedbacks: [
+      {
+        _id: '5f105ee03426b60ed2ff8736',
+        product: 'kronstejn-dla-tv-mart-d4116-cernyj',
+        advantages: 'Очень хороший и качественный товар, но сильно пачкается',
+        rate: 4,
+      },
+      {
+        _id: '5f105ee03426b60ed2ff8737',
+        product: 'kronstejn-dla-tv-mart-d4116-cernyj',
+        advantages: 'Совершенно не подошел по характеристикам.',
+        rate: 3,
+      },
+    ],
+    feedbacksCount: 2,
+    images: [
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/c8e99d06dfc0b16f376cd98829313c71/a74b097bf6ad91ee8d5eba090c2e2ed03fc6a59a22394b7c01879e84eff92ab0.jpg',
+        source:
+          'a74b097bf6ad91ee8d5eba090c2e2ed03fc6a59a22394b7c01879e84eff92ab0.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/6d8d29967bb94f55b8afd5542c5a295a/44aefa60169444d09828538189c55212d9ff4933a98b4225ba0a129058128da8.jpg',
+        source:
+          '44aefa60169444d09828538189c55212d9ff4933a98b4225ba0a129058128da8.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/3a14b21435f7c17f5964df605f555b12/8ed24c8d70ae2f9f5728e6d505537d79257b38d16ea060cee86c7c464827a0fd.jpg',
+        source:
+          '8ed24c8d70ae2f9f5728e6d505537d79257b38d16ea060cee86c7c464827a0fd.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/2af6110f1d88265e318ec91521954bb5/1d338b79e0cb8518b080799024a1ec166033f0deb727fb7fb398a4cfe233ad50.jpg',
+        source:
+          '1d338b79e0cb8518b080799024a1ec166033f0deb727fb7fb398a4cfe233ad50.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/ef9caa440d0f3fd81171d55d80d26190/b3eb84684f416b4ff3f8ad8af73cbd5f83c35c75810ab1767488668bb38d4531.jpg',
+        source:
+          'b3eb84684f416b4ff3f8ad8af73cbd5f83c35c75810ab1767488668bb38d4531.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/wm/2000/2000/2e61ea7a269f0686153ddb722d17442a/4152f2e7cdbec68e46f8eb2cd6fec7f06b6f0e0e02245557945762899648843d.jpg',
+        source:
+          '4152f2e7cdbec68e46f8eb2cd6fec7f06b6f0e0e02245557945762899648843d.jpg',
+      },
+    ],
+    name: 'Кронштейн для ТВ Mart D4116 черный',
+    price: 31,
+    rating: 3.5,
+    status: 1,
+    subCategory: 'televizory-i-aksessuary',
+    characteristics: [
+      {
+        title: 'Общие параметры',
+        items: [
+          { name: 'Тип', value: 'кронштейн для ТВ', isExtended: true },
+          { name: 'Модель', value: 'Mart D4116', isExtended: true },
+          { name: 'Основной цвет', value: 'черный', isExtended: true },
+          { name: 'Дополнительный цвет', value: 'черный', isExtended: true },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Конструкция',
+        items: [
+          {
+            name: 'Способ регулировки',
+            value: 'наклон и поворот',
+            isExtended: true,
+          },
+          {
+            name: 'Место крепления кронштейна',
+            value: 'к стене',
+            isExtended: true,
+          },
+          { name: 'Встроенный уровень', value: 'нет', isExtended: true },
+          { name: 'Кабель-канал', value: 'нет', isExtended: true },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Совместимость',
+        items: [
+          { name: 'Максимальная нагрузка', value: '25 кг' },
+          {
+            name: 'Стандарт размеров крепления (VESA)',
+            value:
+              '300 x 300, 50 x 50, 300 x 200, 400 x 400, 400 x 200, 200 x 200, 100 x 100, 75 x 75, 200 x 100',
+          },
+          {
+            name: 'Минимальная диагональ экрана',
+            value: '26"',
+            isExtended: true,
+          },
+          { name: 'Максимальная диагональ экрана', value: '64"' },
+        ],
+      },
+      {
+        title: 'Регулировка',
+        items: [
+          { name: 'Угол поворота ответной части', value: '110°' },
+          { name: 'Угол наклона вверх', value: '15°' },
+          { name: 'Угол наклона вниз', value: '15°' },
+          {
+            name: 'Регулировка расстояния до стены/потолка',
+            value: 'есть',
+            isExtended: true,
+          },
+          { name: 'Минимальное расстояние от стены/потолка', value: '110 мм' },
+          {
+            name: 'Максимальное расстояние от стены/потолка',
+            value: '270 мм',
+            isExtended: true,
+          },
+          { name: 'Количество колен', value: '1', isExtended: true },
+        ],
+      },
+    ],
+    brand: 'MART',
+    count: 1,
+  },
+  {
+    _id: 'videoregistrator-radar-detektor-neoline-x-cop-9100s',
+    description:
+      'Видеорегистратор, радар-детектор NEOLINE X-Cop 9100S представляет из себя универсальное устройство: модель может использовать для питания как 12-вольтовую, так и 24-вольтовую бортовую электросеть. Прибор является комбинированным: вы сможете не только осуществлять видеосъемку дорожной обстановки, но и получать информацию о наличии радаров, контролирующих скоростной режим. Функциональность радар-детектора расширена благодаря наличию лазерного сенсора, угол обзора которого составляет 360°. На открытой местности дальность обнаружения радара может достигать невероятных 2.5 км. Наличие навигационного модуля позволило реализовать функцию GPS-информатора. Прибор предоставит вам информацию о стационарных радарах. Видеорегистратор, радар-детектор NEOLINE X-Cop 9100S оснащен камерой с шестислойной стеклянной линзой. Запись производится с разрешением 1920x1080 и частотой 30 кадров в секунду. Доступны два режима записи – циклический (продолжительность циклов может составлять 1, 2 и 5 мин) и непрерывный. Важными конструктивными элементами прибора являются датчики удара и движения.',
+    feedbacks: [
+      {
+        _id: '5f105ecb3426b60ed2ff8643',
+        product: 'videoregistrator-radar-detektor-neoline-x-cop-9100s',
+        advantages:
+          'Самый лучший товар в этой категории, всем горячо рекомендую',
+        rate: 5,
+      },
+      {
+        _id: '5f105ecb3426b60ed2ff8644',
+        product: 'videoregistrator-radar-detektor-neoline-x-cop-9100s',
+        advantages: 'Совершенно не подошел по характеристикам.',
+        rate: 3,
+      },
+    ],
+    feedbacksCount: 2,
+    images: [
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/0/0/dc4e7736366c635a47fdd7b21be717a9/3381432fc2c3663b0f3ab3d030f772f20f72b5d80e2bd347e8e3c3ec3d989592.jpg',
+        source:
+          '3381432fc2c3663b0f3ab3d030f772f20f72b5d80e2bd347e8e3c3ec3d989592.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/dbd4ae0a829c2d8c187637c23aea69f0/91ca93039edcaf7ef014c49f4e4d7c779bb28feb9d856134b4b73b047d0faf68.jpg',
+        source:
+          '91ca93039edcaf7ef014c49f4e4d7c779bb28feb9d856134b4b73b047d0faf68.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/36b4c88fb6698cb5e22fd5fbae6a0d01/f5aca6cb9650a756b8a634cb8bcbb20365acd75b1c51b87bd12ef159b4ae2e77.jpg',
+        source:
+          'f5aca6cb9650a756b8a634cb8bcbb20365acd75b1c51b87bd12ef159b4ae2e77.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/9fb888518036eb58e6fe211b1b06adbd/6a107a1d8eb6e7268faedde4ebcc822e0920d0faebe16ff23d6f378e1275cd61.jpg',
+        source:
+          '6a107a1d8eb6e7268faedde4ebcc822e0920d0faebe16ff23d6f378e1275cd61.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/wm/2000/2000/a07c62431f00b29b3d301766baf21ba6/189b76949336412ee2ce6710653d141d4728061d30db83e6c4a5338b50d13dff.jpg',
+        source:
+          '189b76949336412ee2ce6710653d141d4728061d30db83e6c4a5338b50d13dff.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/wm/2000/2000/9cfe1ce6234c4b9772ed83718a0443ba/6debe197fb6a28de53f1b2f3beb36a53dab4b49cd5a1f07ca8d65e6257a569b2.jpg',
+        source:
+          '6debe197fb6a28de53f1b2f3beb36a53dab4b49cd5a1f07ca8d65e6257a569b2.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/d7197dc9e4bc106792555c1b3b70e44b/43059261844e87c0b483278932f6472c5e51490dc8cdd1d89ad10e685992773f.jpg',
+        source:
+          '43059261844e87c0b483278932f6472c5e51490dc8cdd1d89ad10e685992773f.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/889b4216492d9474bc56f6c2a449de7f/5e1cd72a88ed83f375841895937af0bbbfc489547610db9cf43dcd1380c634a5.jpg',
+        source:
+          '5e1cd72a88ed83f375841895937af0bbbfc489547610db9cf43dcd1380c634a5.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/wm/2000/2000/f2e19c0b5cecc0933f1d06a654d0e14f/09d72a7d22f77f92f48670a8ec4d5e4486c18045966a8b29c883031da3334c7e.jpg',
+        source:
+          '09d72a7d22f77f92f48670a8ec4d5e4486c18045966a8b29c883031da3334c7e.jpg',
+      },
+    ],
+    name: 'Видеорегистратор, радар-детектор NEOLINE X-Cop 9100S',
+    price: 400,
+    rating: 4,
+    status: 1,
+    subCategory: 'avtoelektronika-i-protivougonnye-sistemy',
+    characteristics: [
+      {
+        title: 'Общие параметры',
+        items: [
+          { name: 'Тип', value: 'видеорегистратор', isExtended: true },
+          { name: 'Модель', value: 'NEOLINE X-Cop 9100S', isExtended: true },
+          { name: 'Основной цвет', value: 'черный', isExtended: true },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Матрица и видеосистема',
+        items: [
+          { name: 'Чипсет', value: 'Ambarella A7LA30', isExtended: true },
+          { name: 'Матрица', value: 'Sony Exmor IMX323', isExtended: true },
+          {
+            name: 'Максимальное разрешение видеозаписи',
+            value: '1920x1080 (FullHD)',
+          },
+          {
+            name: 'Интерполированное разрешение',
+            value: 'нет',
+            isExtended: true,
+          },
+          {
+            name: 'Частота кадров при максимальном разрешении',
+            value: '30 кадр./сек',
+          },
+          { name: 'Формат записи', value: 'MP4', isExtended: true },
+        ],
+      },
+      {
+        title: 'Камера',
+        items: [
+          { name: 'Количество камер', value: '1', isExtended: true },
+          { name: 'Угол обзора объектива', value: '135°' },
+          { name: 'Поворот корпуса', value: 'есть', isExtended: true },
+          { name: 'Режим фотосъемки', value: 'нет', isExtended: true },
+          {
+            name: 'Физический размер матрицы',
+            value: '1/2.9"',
+            isExtended: true,
+          },
+          {
+            name: 'Особенности камеры',
+            value: '6-слойная стеклянная линза',
+            isExtended: true,
+          },
+        ],
+      },
+      {
+        title: 'Дисплей',
+        items: [
+          { name: 'Дисплей', value: 'есть', isExtended: true },
+          { name: 'Сенсорный дисплей', value: 'нет', isExtended: true },
+          { name: 'Диагональ дисплея', value: '2"' },
+        ],
+      },
+      {
+        title: 'Детектор радаров',
+        items: [
+          { name: 'Встроенный радар-детектор', value: 'есть' },
+          {
+            name: 'Виды обнаруживаемых радаров',
+            value:
+              'маломощные радары, «Искра», "Кордон", "MESTA", "ЛИСД", "АМАТА", "Бинар", "Визир", "Поток", "Крис", "Одисей", "Vocord", "Рапира", стационарные камеры, "Кречет", "Беркут", "Арена", "Автоураган", "Робот", "Стрелка"',
+            isExtended: true,
+          },
+          { name: 'Диапазоны радаров', value: 'Ka, K, М', isExtended: true },
+          {
+            name: 'Режимы Город/Трасса',
+            value: '"Трасса", "Трасса Турбо", "Город"',
+            isExtended: true,
+          },
+          {
+            name: 'Угол обзора лазерного сенсора',
+            value: '360°',
+            isExtended: true,
+          },
+          {
+            name: 'Дальность обнаружения',
+            value: 'до 2500 м',
+            isExtended: true,
+          },
+          { name: 'Работа "в спину"', value: 'есть', isExtended: true },
+        ],
+      },
+      {
+        title: 'Режимы и функции записи',
+        items: [
+          {
+            name: 'Циклическая запись',
+            value: '2 мин, 1 мин, нет, 5 мин',
+            isExtended: true,
+          },
+          { name: 'Непрерывная запись', value: 'есть', isExtended: true },
+          { name: 'Wi-Fi', value: 'нет', isExtended: true },
+          { name: 'Запись времени и даты', value: 'есть', isExtended: true },
+          { name: 'Запись скорости', value: 'есть', isExtended: true },
+          {
+            name: 'Запись события в отдельный файл',
+            value: 'есть',
+            isExtended: true,
+          },
+          {
+            name: 'Дополнительные функции',
+            value: 'GPS/ГЛОНАСС, голосовые подсказки, режим "Парковка"',
+            isExtended: true,
+          },
+          { name: 'Режим ночной съемки', value: 'есть', isExtended: true },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Хранение данных',
+        items: [
+          {
+            name: 'Форматы поддерживаемых карт памяти',
+            value: 'microSD',
+            isExtended: true,
+          },
+          {
+            name: 'Максимальный размер карты памяти',
+            value: '128 ГБ',
+            isExtended: true,
+          },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Крепление и датчики',
+        items: [
+          { name: 'Тип крепления', value: '3М скотч', isExtended: true },
+          { name: 'Датчик движения', value: 'есть', isExtended: true },
+          { name: 'G-сенсор', value: 'есть', isExtended: true },
+          { name: 'GPS-модуль', value: 'есть' },
+          { name: 'GPS-информатор', value: 'есть', isExtended: true },
+          { name: 'Встроенный GPS навигатор', value: 'нет', isExtended: true },
+          { name: 'Подсветка', value: 'есть', isExtended: true },
+        ],
+      },
+      {
+        title: 'Питание и разъемы',
+        items: [
+          {
+            name: 'Питание',
+            value: 'аккумулятор, бортовая сеть 12 - 24 В',
+            isExtended: true,
+          },
+          { name: 'Аккумулятор', value: 'встроенный', isExtended: true },
+          { name: 'Емкость аккумулятора', value: '220 мА*ч', isExtended: true },
+          {
+            name: 'Разъемы на корпусе',
+            value: 'разъем питания, 2 cлота для карт памяти',
+            isExtended: true,
+          },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Дополнительная информация',
+        items: [
+          {
+            name: 'Комплектация',
+            value:
+              'крепежный элемент для кабеля питания 8 шт, инструмент для снятия 3М скотча, кабель питания в розетку, крепление с активной зарядкой на 3М скотче Smart Click Plus, защитный кейс IP68, кабель питания, 3М скотч',
+            isExtended: true,
+          },
+          { name: 'Дополнительно', value: 'EXD Plus', isExtended: true },
+          { name: 'Рабочая температура, мин', value: '-20°', isExtended: true },
+          { name: 'Рабочая температура, макс', value: '70°', isExtended: true },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Габариты и вес',
+        items: [
+          { name: 'Ширина', value: '73 мм', isExtended: true },
+          { name: 'Высота', value: '46 мм', isExtended: true },
+          { name: 'Глубина', value: '94 мм', isExtended: true },
+        ],
+        isExtended: true,
+      },
+    ],
+    brand: 'NEOLINE',
+    count: 1,
+  },
+  {
+    _id: 'elektrogenerator-hyundai-hhy-10000fe-t',
+    description:
+      'Генератор HYUNDAI очень прост в эксплуатации и прекрасно подойдет в качестве альтернативного источника питания вашего дома. Профессиональный 4-тактный дизельный двигатель. Автоматический регулятор напряжения. Экономичный расход топлива. Розетки электростанции имеют крышки с самовозвратным механизмом, которые предотвращают попадание грязи и пыли. Выключатель защиты при перегрузках. Аварийная остановка при низком уровне масла в картере. Увеличенный стальной топливный бак. Автоматический регулятор напряжения с защитой от КЗ.',
+    feedbacks: [
+      {
+        _id: '5f105ec83426b60ed2ff862a',
+        product: 'elektrogenerator-hyundai-hhy-10000fe-t',
+        advantages:
+          'Самый лучший товар в этой категории, всем горячо рекомендую',
+        rate: 5,
+      },
+      {
+        _id: '5f105ec83426b60ed2ff862b',
+        product: 'elektrogenerator-hyundai-hhy-10000fe-t',
+        advantages: 'Совершенно не подошел по характеристикам.',
+        rate: 3,
+      },
+      {
+        _id: '5f105ec83426b60ed2ff862c',
+        product: 'elektrogenerator-hyundai-hhy-10000fe-t',
+        advantages: 'Совершенно не подошел по характеристикам.',
+        rate: 3,
+      },
+      {
+        _id: '5f105ec83426b60ed2ff862d',
+        product: 'elektrogenerator-hyundai-hhy-10000fe-t',
+        advantages:
+          'Самый лучший товар в этой категории, всем горячо рекомендую',
+        rate: 5,
+      },
+    ],
+    feedbacksCount: 4,
+    images: [
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/0/0/f179a44043f9901399b56d4a61914999/0d20e6e6ffa3fe4cf2268bff35fc75ae149e56a335b4f4ae5252f11a0a819d61.jpg',
+        source:
+          '0d20e6e6ffa3fe4cf2268bff35fc75ae149e56a335b4f4ae5252f11a0a819d61.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/0/0/fbb7da51018e7f244b6344efb1165381/8319916ef5775938f55c3e7a44b4c51ea79b39ad289e3bd353401a3495c546fd.jpg',
+        source:
+          '8319916ef5775938f55c3e7a44b4c51ea79b39ad289e3bd353401a3495c546fd.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/0/0/86a6acfb448382a5ff648aa6f1f9e761/f9084f5c46a9be567d02ab99daba1fee3b3e87591b048030d383f90f3ad50e2d.jpg',
+        source:
+          'f9084f5c46a9be567d02ab99daba1fee3b3e87591b048030d383f90f3ad50e2d.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/0/0/b363e8861b835960a3de7b9cafd004bd/819d42828fd79b2447e013858824dbbf51c0cfbdaf609dc034dd0a576e5e2076.jpg',
+        source:
+          '819d42828fd79b2447e013858824dbbf51c0cfbdaf609dc034dd0a576e5e2076.jpg',
+      },
+    ],
+    name: 'Электрогенератор Hyundai HHY 10000FE-T',
+    price: 1021,
+    rating: 4,
+    status: 1,
+    subCategory: 'stroitelstvo-izmerenie-i-uborka',
+    characteristics: [
+      {
+        title: 'Общие параметры',
+        items: [
+          { name: 'Тип', value: 'электрогенератор', isExtended: true },
+          { name: 'Модель', value: 'Hyundai HHY 10000FE-T', isExtended: true },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Генератор',
+        items: [
+          {
+            name: 'Максимальная выходная мощность',
+            value: '8 кВт',
+            isExtended: true,
+          },
+          { name: 'Номинальная выходная мощность', value: '7.5 кВт' },
+          { name: 'Напряжение', value: '220/380В' },
+          { name: 'Стабилизация напряжения', value: 'AVR', isExtended: true },
+          { name: 'Выходной ток', value: '32 А' },
+          {
+            name: 'Розетки',
+            value: '230В (1 шт), 220В (1 шт)',
+            isExtended: true,
+          },
+          { name: 'Выход 12В', value: 'есть' },
+        ],
+      },
+      {
+        title: 'Двигатель',
+        items: [
+          { name: 'Запуск', value: 'ручной/электрический' },
+          { name: 'Объем двигателя', value: '460 см³', isExtended: true },
+          { name: 'Мощность двигателя', value: '18 л.с.' },
+          { name: 'Вид топлива', value: 'бензин' },
+          { name: 'Емкость топливного бака', value: '25 л', isExtended: true },
+          { name: 'Время работы на полном баке', value: '14 ч' },
+          { name: 'Количество цилиндров', value: '1', isExtended: true },
+          { name: 'Цикл двигателя', value: 'четырехтактный', isExtended: true },
+          {
+            name: 'Объем масла в картере двигателя',
+            value: '1.1 л',
+            isExtended: true,
+          },
+          { name: 'Глушитель', value: 'есть', isExtended: true },
+          { name: 'Модель двигателя', value: 'IC460', isExtended: true },
+        ],
+      },
+      {
+        title: 'Индикация',
+        items: [
+          { name: 'Индикация уровня топлива', value: 'есть', isExtended: true },
+          { name: 'Датчик уровня масла', value: 'есть', isExtended: true },
+          { name: 'Вольтметр', value: 'есть', isExtended: true },
+          { name: 'Счетчик моточасов', value: 'есть', isExtended: true },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Безопасность',
+        items: [
+          { name: 'Защита от перегрузок', value: 'есть', isExtended: true },
+          {
+            name: 'Охлаждение двигателя',
+            value: 'воздушное',
+            isExtended: true,
+          },
+        ],
+        isExtended: true,
+      },
+      {
+        title: 'Дополнительная информация',
+        items: [
+          { name: 'Уровень шума', value: '74 дБ' },
+          {
+            name: 'Комплектация',
+            value: 'руководство по эксплуатации, набор инструментов',
+          },
+        ],
+      },
+      {
+        title: 'Габариты и вес',
+        items: [
+          { name: 'Ширина', value: '750 мм', isExtended: true },
+          { name: 'Высота', value: '590 мм', isExtended: true },
+          { name: 'Длина', value: '620 мм', isExtended: true },
+          { name: 'Вес', value: '89.5 кг' },
+        ],
+      },
+    ],
+    brand: 'Hyundai',
+    count: 1,
+  },
+  {
+    _id: '133-cehol-riva-8903',
+    description:
+      'Изящный и стильный чехол для ноутбука, изготовленный из высококачественной водостойкой искусственной кожи. Его классический вид гарантирует, что он легко впишется в офисную среду. Язычки молний и сами молнии изготовлены из прочного металла для обеспечения беспрепятственного доступа и долговечности. Внутри имеется специальная угловые накладки, которые защитят ноутбук от царапин и надежно зафиксируют его внутри.',
+    feedbacks: [
+      {
+        _id: '5f105eec3426b60ed2ff87d2',
+        product: '133-cehol-riva-8903',
+        advantages:
+          'Самый лучший товар в этой категории, всем горячо рекомендую',
+        rate: 5,
+      },
+      {
+        _id: '5f105eec3426b60ed2ff87d3',
+        product: '133-cehol-riva-8903',
+        advantages:
+          'Самый лучший товар в этой категории, всем горячо рекомендую',
+        rate: 5,
+      },
+    ],
+    feedbacksCount: 2,
+    images: [
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st1/fit/wm/2000/2000/39c52c4ecbb295e5de3cee76dd2e780b/2860ee5d86fb290dc40f0d00eece4ec6cd1a927bb636b4ed35e088598307d294.jpg',
+        source:
+          '2860ee5d86fb290dc40f0d00eece4ec6cd1a927bb636b4ed35e088598307d294.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/faea4f85681b20cf420b4f51c7657993/d1a7fee51c2b5c6e839984f62d3badd6248763489a0949686e376d12cd22437d.jpg',
+        source:
+          'd1a7fee51c2b5c6e839984f62d3badd6248763489a0949686e376d12cd22437d.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/43500a93e5aea3c35586b1c9c279c503/3b4a58de0bda9acf37ab6776a094669a54f644493d8dd52532d158c2881f911a.jpg',
+        source:
+          '3b4a58de0bda9acf37ab6776a094669a54f644493d8dd52532d158c2881f911a.jpg',
+      },
+      {
+        url:
+          'https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/9d68d17e528847c275e1afc7a68c2606/160466273975985163b332497c061feb8458233a977014519691f55c895d84b4.jpg',
+        source:
+          '160466273975985163b332497c061feb8458233a977014519691f55c895d84b4.jpg',
+      },
+    ],
+    name: '13.3" Чехол Riva 8903',
+    price: 24,
+    rating: 5,
+    status: 1,
+    subCategory: 'kompyutery-noutbuki-i-po',
+    characteristics: [
+      {
+        title: 'Общие параметры',
+        items: [
+          { name: 'Тип', value: 'чехол' },
+          { name: 'Модель', value: 'Riva 8903', isExtended: true },
+        ],
+      },
+      {
+        title: 'Внешний вид',
+        items: [
+          { name: 'Основной цвет', value: 'черный' },
+          { name: 'Женский дизайн', value: 'нет', isExtended: true },
+        ],
+      },
+      {
+        title: 'Совместимость',
+        items: [
+          { name: 'Максимально поддерживаемая диагональ', value: '13.3"' },
+          { name: 'Совместимые модели устройств', value: 'универсальный' },
+        ],
+      },
+      {
+        title: 'Конструкция',
+        items: [
+          { name: 'Материал', value: 'полиэстер, полиуретан' },
+          { name: 'Внешнее отделение', value: 'есть', isExtended: true },
+          { name: 'Плечевой ремень', value: 'нет', isExtended: true },
+          { name: 'Тип застежки', value: 'молния', isExtended: true },
+        ],
+      },
+    ],
+    brand: 'Riva',
+    count: 1,
+  },
+];
 export const cartMock = [
   {
     _id: 'ustanovocnyj-komplekt-swat-pac-f4',

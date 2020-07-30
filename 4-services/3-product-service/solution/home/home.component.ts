@@ -47,6 +47,6 @@ export class HomeComponent implements OnInit {
       .subscribe((categories) => (this.categories = categories));
     this._productsService
       .getSuggestedProducts()
-      .subscribe((products) => (this.suggestedProducts = products));
+      .subscribe((products) => (this.suggestedProducts = products['items']));
   }
 }

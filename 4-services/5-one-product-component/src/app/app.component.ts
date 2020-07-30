@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 })
 // @ts-ignore
 export class AppComponent {
-  public title = 'one-product-component';
+  public title = 'Сервис получения данных о продукте';
 }

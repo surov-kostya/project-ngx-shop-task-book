@@ -1,9 +1,6 @@
-import {
-  ICategory,
-  ISubCategory,
-} from './../../../../../shared/interfaces/categories.interface';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
+import { ICategory } from 'shared/interfaces/categories.interface';
 @Component({
   selector: 'ngx-shop-side-menu',
   templateUrl: './side-menu.component.html',

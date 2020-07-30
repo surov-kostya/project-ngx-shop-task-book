@@ -273,7 +273,8 @@ a:hover
     padding: 0 1rem 1rem
     margin: 0
     overflow-x: overlay
-
+.all-characters, .characters
+  color: #007bff
 .github-star-badge
     color: #24292e
     display: flex
@@ -415,6 +416,7 @@ li
   background-image: url(../3-directive/6-home-category-dropdown/src/assets/icons/icon-angle.svg)
 .product-carousel
   height: 410px
+  width: 100%
   border-radius: 4px 4px 0 0
 
 .product-carousel .carousel-indicators li
@@ -557,6 +559,7 @@ li
     position: absolute
     height: 277px        
 @media screen and (max-width: 767px)
+    
     .main-carousel .carousel-control-prev
         z-index: 500
     .description-col
@@ -709,6 +712,7 @@ svg#rocket-smoke
     .main-carousel .carousel-caption
         top: 20px
         text-align: center
+
 
 svg#rocket-smoke
     display: none
@@ -911,7 +915,8 @@ body
 
 
 @media screen and (min-width: 768px)
-
+    .product-info-tabs
+        margin-top: 3rem
     .carousel-inner
         height: 450px
     .carousel-caption
@@ -919,6 +924,7 @@ body
         text-align: center
     ngx-shop-product-card 
         display: flex
+        min-height: 410px
         max-width: 370px
         justify-content: center
         .card-component
@@ -968,6 +974,8 @@ body
 
 
 @media all and (min-width: 992px)
+    .price-text.discount
+        color: #d9534f
     .main-carousel .carousel-caption .h1
         font-size: 32px
         line-height: 36px
@@ -991,7 +999,8 @@ body
   color: #fff
   a img
     width: 30px
-
+.review
+  padding: 25px 0
 @media all and (min-width: 992px)
     .main-carousel .carousel-caption
         max-width: 45%
@@ -1110,3 +1119,9 @@ body
   color: #373a3c
   margin-bottom: 1.5rem
   
+
+@media all and (max-width: 992px)
+    .product-info
+        font-size: 14px
+        line-height: 20px
+        margin-top: 6rem

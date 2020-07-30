@@ -25,10 +25,10 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    // browsers: ["ChromeHeadless"],
-    browsers: ["Chrome"],
+    browsers: ["ChromeHeadless"],
+    // browsers: ["Chrome"],
     // singleRun: true,
-    singleRun: false,
+    singleRun: true,
     restartOnFileChange: true,
   });
 };

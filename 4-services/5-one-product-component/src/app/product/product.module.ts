@@ -1,3 +1,4 @@
+import { ProductSliderComponent } from './../../../../../3-directive/5-slider-component/solution/product-slider/product-slider.component';
 import { RatePipe } from '../shared/rate.pipe';
 import { ReviewPipe } from '../shared/review.pipe';
 import { NgModule } from '@angular/core';
@@ -18,6 +19,7 @@ import { StarRatingComponent } from './information/star-rating/star-rating.compo
     ReviewPipe,
     RatePipe,
     StarRatingComponent,
+    ProductSliderComponent,
   ],
   imports: [ProductRoutingModule, BrowserAnimationsModule],
 })

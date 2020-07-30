@@ -8,7 +8,6 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 // @ts-ignore
 export class ShopCardComponent {
-  constructor() {}
   @Output()
   public decrement: EventEmitter<void> = new EventEmitter<void>();
   @Output()

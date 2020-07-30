@@ -9,7 +9,7 @@ describe('[Moдуль 3]  Баннер компонент', () => {
   let component: BannerSliderComponent;
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BannerSliderComponent],
+      declarations: [BannerSliderComponent, BannerSliderComponent],
       imports: [BrowserModule, BrowserAnimationsModule],
     });
     fixture = TestBed.createComponent(BannerSliderComponent);

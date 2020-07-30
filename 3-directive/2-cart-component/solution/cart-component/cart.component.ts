@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-
-import { IProduct } from '../../shared/product.interface';
+import { IProduct } from 'shared/interfaces/product.interface';
 
 @Component({
   selector: 'ngx-shop-cart',

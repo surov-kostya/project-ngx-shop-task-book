@@ -12,4 +12,7 @@ export class ProductCardComponent {
   public redirectTo(product: IProduct): void {
     this.goToProduct.emit(product);
   }
+  ngDoCheck() {
+    console.log(this.product);
+  }
 }

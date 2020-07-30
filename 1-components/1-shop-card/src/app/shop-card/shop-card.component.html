@@ -2,13 +2,13 @@
   <div class="inner-col description-col">
     <i class="fa fa-times-circle-o" aria-hidden="true"></i>
     <div class="product-img">
-      <img />
+      <img [src]="product.images[0].source" [alt]="product.name" />
     </div>
     <div class="product-desc">
-      <h4 class="col-title mb-2"></h4>
+      <h4 class="col-title mb-2">{{ product.name }}</h4>
 
       <p class="price-text mb-0 mt-2 d-inline-block d-md-none">
-        <strong>€</strong>
+        <strong>{{ product.price }}€</strong>
       </p>
     </div>
   </div>

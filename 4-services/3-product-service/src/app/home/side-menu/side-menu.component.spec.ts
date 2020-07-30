@@ -2,6 +2,7 @@ import { categoriesMock } from '../../../../../../shared/mocks/categories.mock';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { SideMenuComponent } from './side-menu.component';
+import { BannerSliderComponent } from '../banner/banner.component';
 
 describe('[Moдуль 3]  Компонент список категорий товаров, домашняя страница', () => {
   let fixture: ComponentFixture<SideMenuComponent>;
@@ -9,7 +10,11 @@ describe('[Moдуль 3]  Компонент список категорий т�
   let selectedSubCategorySpy: jasmine.Spy;
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SideMenuComponent],
+      declarations: [
+        SideMenuComponent,
+        SideMenuComponent,
+        BannerSliderComponent,
+      ],
     });
     fixture = TestBed.createComponent(SideMenuComponent);
     component = fixture.componentInstance;

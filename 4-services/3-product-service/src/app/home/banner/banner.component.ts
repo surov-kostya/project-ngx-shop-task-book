@@ -34,4 +34,8 @@ export class BannerSliderComponent extends Slider<IBanner> {
   constructor(private readonly _cdr: ChangeDetectorRef) {
     super(_cdr);
   }
+
+  public redirectTo(subCat: string): void {
+    this.suggestedCategory.emit(subCat);
+  }
 }

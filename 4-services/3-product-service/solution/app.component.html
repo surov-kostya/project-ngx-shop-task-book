@@ -72,13 +72,7 @@
 
   <div class="content-wrap" style="padding-top: 0;">
     <div class="content-block" style="padding-top: 100px;">
-      <ngx-shop-products (redirectTo)="redirectTo($event)"></ngx-shop-products>
-    </div>
-    <div class="terminal">
-      <pre>
-        <p *ngIf ='terminalMessage'>Переход на компонент товара:
-           {{ terminalMessage | json}}</p>
-      </pre>
+      <ngx-shop-products></ngx-shop-products>
     </div>
   </div>
 </div>

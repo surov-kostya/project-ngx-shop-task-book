@@ -1,6 +1,4 @@
 import { ShopCardComponent } from './shop-card.component';
-import { productData } from './../../../../3-product-card/src/mocks/mock-product';
-
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
@@ -13,7 +11,6 @@ describe('[Moдуль 1]  Компонент товара в корзине', ()
     });
     fixture = TestBed.createComponent(ShopCardComponent);
     component = fixture.componentInstance;
-    (component as any).product = productData;
     fixture.detectChanges();
   });
 
@@ -26,8 +23,8 @@ describe('[Moдуль 1]  Компонент товара в корзине', ()
   it('компонент должен иметь метод incrementProductInCart', () => {
     expect((component as any).incrementProductInCart).toBeTruthy();
   });
-  it('компонент должен иметь свойство products', () => {
-    expect((component as any).products).toBeTruthy();
+  it('компонент должен иметь свойство product', () => {
+    expect((component as any).product).toBeTruthy();
   });
 
   it('тег с селектором .product-desc должен правильно интерполировать title', () => {
@@ -35,23 +32,23 @@ describe('[Moдуль 1]  Компонент товара в корзине', ()
     expect(prodNameEL).toBeTruthy();
     const [{ nativeNode: prodNameNode }] = prodNameEL.childNodes;
     expect(prodNameNode.textContent.trim()).toEqual(
-      (component as any)?.products[0].name
+      (component as any)?.product.name
     );
   });
 
-  it('тег img должен иметь правильное связывание свойств src и alt', () => {
+  xit('тег img должен иметь правильное связывание свойств src и alt', () => {
     const imgWrapEl = fixture.debugElement.query(By.css('.product-img'));
     expect(imgWrapEl).toBeTruthy();
     const {
       images: [{ url }],
       name,
-    } = (component as any)?.products[0];
+    } = (component as any)?.product;
     const [{ nativeNode: imgNode }] = imgWrapEl.childNodes;
     expect(imgNode.attributes.src.textContent).toEqual(url);
     expect(imgNode.attributes.alt.textContent).toEqual(name);
   });
-  it('тег с селектором .price-text должен правильно интерполировать price', () => {
-    const { price } = (component as any)?.products[0];
+  xit('тег с селектором .price-text должен правильно интерполировать price', () => {
+    const { price } = (component as any)?.product;
     const priceEl = fixture.debugElement.query(By.css('.price-text'));
     expect(price).toBeTruthy();
     const [{ nativeNode: priceNode }] = priceEl.childNodes;
@@ -60,8 +57,8 @@ describe('[Moдуль 1]  Компонент товара в корзине', ()
       `€${price.toString()}.00`
     );
   });
-  it('тег с селектором .price  и .counter__value должен правильно интерполировать total', () => {
-    const { price } = (component as any)?.products[0];
+  xit('тег с селектором .price  и .counter__value должен правильно интерполировать total', () => {
+    const { price } = (component as any)?.product;
     const priceEl = fixture.debugElement.query(By.css('.price'));
     const counterEl = fixture.debugElement.query(By.css('.counter__value'));
     expect(price).toBeTruthy();

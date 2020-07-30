@@ -1,17 +1,6 @@
+import { ProductsService } from './../services/products.service';
 import { Component, OnInit } from '@angular/core';
-// import { ActivatedRoute } from '@angular/router';
 import { IProduct } from '../../../../../shared/interfaces/product.interface';
-import { oneProduct } from '../../../../../shared/mocks/oneProductMock';
-// import { Store } from '@ngrx/store';
-// import { IStore } from 'src/app/store/reducers';
-// import { Observable } from 'rxjs';
-// import {
-//   getProductPending,
-//   clearProduct,
-// } from './store/actions/product.actions';
-// import { UnSubscriber } from 'src/app/shared/utils/unsubscriber';
-// import { takeUntil } from 'rxjs/operators';
-// import { IProductState } from './store/reducers/product.reducer';
 
 @Component({
   selector: 'ngx-shop-product',
@@ -19,23 +8,11 @@ import { oneProduct } from '../../../../../shared/mocks/oneProductMock';
 })
 // @ts-ignore
 export class ProductComponent implements OnInit {
-  // constructor(
-  //   private readonly _activatedRoute: ActivatedRoute,
-  //   private readonly _store: Store<IStore>
-  // ) {
-  //   super();
-  // }
-  public product = oneProduct;
-  // $?: Observable<IProductState> = this._store
-  //   .select('product')
-  //   .pipe(takeUntil(this.unsubscribe$$));
+  constructor(private readonly _productService: ProductsService) {}
+  public product: IProduct;
   public ngOnInit(): void {
-    console.log(this.product);
-    // TODO need resolver !!!!
-    // const { product } = this._activatedRoute.snapshot.params;
-    // this._store.dispatch(getProductPending({ id: product }));
-    // }
-    // public ngOnDestroy(): void {
-    //   this._store.dispatch(clearProduct());
+    this._productService
+      .getProductById('238-monoblok-asus-v241fak-ba034d-90pt0292-m03040')
+      .subscribe((product) => (this.product = product));
   }
 }
