@@ -1,3 +1,4 @@
+import { cartProducts } from './../../../../shared/mocks/cart.mock';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,12 +7,10 @@ import { Component } from '@angular/core';
 })
 // @ts-ignore
 export class AppComponent {
-  public terminalMessage: string;
+  public product = cartProducts[0];
+  public terminalMessage = '';
   public increment() {
     this.terminalMessage = 'Увеличение количества товара';
-  }
-  public remove() {
-    this.terminalMessage = 'Убрать товара из корзины';
   }
   public decrement() {
     this.terminalMessage = 'Уменьшение количества товара';

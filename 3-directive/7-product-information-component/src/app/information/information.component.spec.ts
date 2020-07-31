@@ -3,7 +3,7 @@ import { RatePipe } from './../../../../../2-pipe/2-rate-pipe/src/shared/rate.pi
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { InformationComponent } from './information.component';
-import { oneProduct } from '../../../../../shared/mocks/oneProductMock';
+import { oneProduct } from '../../../../../shared/mocks/productMock';
 
 describe('[Moдуль 3] Компонент информации о продукте', () => {
   let fixture: ComponentFixture<InformationComponent>;

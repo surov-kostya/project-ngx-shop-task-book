@@ -1,6 +1,6 @@
 import { productData } from './../../../../shared/mocks/mock-product';
 import { Component } from '@angular/core';
-import { oneProduct } from '../../../../shared/mocks/oneProductMock';
+import { oneProduct } from '../../../../shared/mocks/productMock';
 
 @Component({
   selector: 'app-root',

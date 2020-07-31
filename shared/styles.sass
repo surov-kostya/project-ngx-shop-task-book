@@ -721,14 +721,14 @@ svg#rocket-smoke
 .basket
     position: relative
 
-.product-list-box
+.product-list-box.-basket
     border: 1px solid #cccccc
     border-radius: 4px
     display: flex
     flex: 1 0 auto
     flex-direction: row
     margin-bottom: 0.75rem
-    // height: 200px
+    height: 200px
 
 .product-list-box.-basket .description-col
     border-bottom: 1px solid #c4c4c4
@@ -802,6 +802,10 @@ svg#rocket-smoke
     justify-content: center
     max-width: 45%
     overflow: hidden
+ 
+    img
+        height: 100%
+        mix-blend-mode: multiply
 .description-col .product-desc, .description-col .product-img
     &:focus
         outline: none

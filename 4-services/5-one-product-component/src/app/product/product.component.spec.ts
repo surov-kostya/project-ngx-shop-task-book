@@ -1,4 +1,4 @@
-import { oneProduct } from './../../../../../shared/mocks/oneProductMock';
+import { oneProduct } from '../../../../../shared/mocks/productMock';
 import { RatePipe } from './../../../../../2-pipe/2-rate-pipe/solution/pipes/rate.pipe';
 import { DescriptionComponent } from './description/description.component';
 import { StarRatingComponent } from './information/star-rating/star-rating.component';

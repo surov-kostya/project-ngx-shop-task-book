@@ -3,7 +3,7 @@ import { RatePipe } from '../../shared/rate.pipe';
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { InformationComponent } from './information.component';
-import { oneProduct } from '../../../../../../shared/mocks/oneProductMock';
+import { oneProduct } from '../../../../../../shared/mocks/productMock';
 import { StarRatingComponent } from '3-directive/0-star-rating/solution/star-rating/star-rating.component';
 
 describe('[Moдуль 4] Компонент информации о продукте', () => {

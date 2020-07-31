@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { oneProduct } from '../../../../shared/mocks/oneProductMock';
+import { oneProduct } from '../../../../shared/mocks/productMock';
 
 @Component({
   selector: 'app-root',

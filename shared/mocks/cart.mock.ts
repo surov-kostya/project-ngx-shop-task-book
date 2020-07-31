@@ -129,7 +129,7 @@ export const cartProducts = [
       },
     ],
     brand: 'MART',
-    count: 1,
+    count: 6,
   },
   {
     _id: 'videoregistrator-radar-detektor-neoline-x-cop-9100s',
