@@ -50,7 +50,7 @@
       </g>
     </svg>
 
-    <span>1. Интерполяция и связывание</span>
+    <span>1. Интерполяция и связывание.footer</span>
 
     <svg
       id="rocket-smoke"
@@ -72,7 +72,10 @@
 
   <div class="content-wrap">
     <div class="content-block">
-      <app-shop-card></app-shop-card>
+      <ngx-shop-footer
+        [author]="author"
+        [currentYear]="currentYear"
+      ></ngx-shop-footer>
     </div>
     <div class="terminal">
       <pre></pre>

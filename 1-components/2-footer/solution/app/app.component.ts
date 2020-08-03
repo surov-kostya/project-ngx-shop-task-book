@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-// @ts-ignore
 export class AppComponent {
-  title = 'components';
+  public title = '1. Интерполяция и связывание.footer';
+  public author: string = environment.author;
+  public currentYear: number = new Date().getFullYear();
 }

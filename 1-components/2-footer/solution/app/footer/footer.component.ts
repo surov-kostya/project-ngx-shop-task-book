@@ -1,5 +1,4 @@
-import { environment } from 'src/environments/environment';
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
 @Component({
   selector: 'ngx-shop-footer',
@@ -7,6 +6,8 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
-  public author = 'Author';
-  public currentYear: number = new Date().getFullYear();
+  @Input()
+  public author: string;
+  @Input()
+  public currentYear: number;
 }

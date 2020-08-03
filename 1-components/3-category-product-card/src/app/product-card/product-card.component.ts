@@ -11,4 +11,10 @@ import {
   templateUrl: './product-card.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CategoryProductComponent {}
+export class CategoryProductComponent {
+  @Input()
+  public product: IProduct;
+  ngOnInit() {
+    console.log(this.product);
+  }
+}

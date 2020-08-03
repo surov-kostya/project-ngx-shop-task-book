@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { EventEmitter } from '@angular/core';
 import { CategoryProductComponent } from './product-card.component';
-import { productData } from '../../mocks/mock-product';
+import { productData } from '../../../../../shared/mocks/mock-product';
 
 describe('[Moдуль 1]  Компонент товара', () => {
   let fixture: ComponentFixture<CategoryProductComponent>;

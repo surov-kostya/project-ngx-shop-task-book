@@ -3,17 +3,15 @@
     <div class="product-img">
       <img
         class="product-picture"
-        [src]="(product?.images)[0].url"
-        [alt]="product?.name"
+        [src]="product.images[0].url"
+        [alt]="product.name"
       />
     </div>
     <div class="product-desc">
-      <h4 class="product-name col-title mb-2">
-        {{ product?.name }}
-      </h4>
+      <h4 class="product-name col-title mb-2">{{ product.name }}</h4>
 
       <p class="mb-0 mt-2 d-inline-block d-md-none">
-        <strong class="price-text">{{ product?.price }}€</strong>
+        <strong class="price-text">{{ product.price }}€</strong>
       </p>
     </div>
   </div>
@@ -21,16 +19,16 @@
     <div class="counter">
       <button
         class="count-decrement"
-        type="button"
         (click)="decrementProductInCart(product)"
+        type="button"
       >
         <img src="/assets/icons/icon-minus-circle-outlined.svg" alt="minus" />
       </button>
-      <span class="counter__value">{{ product?.count }}</span>
+      <span class="counter__value">{{ product.count }}</span>
       <button
         class="count-increment"
-        type="button"
         (click)="incrementProductInCart(product)"
+        type="button"
       >
         <img src="/assets/icons/icon-plus-circle-outlined.svg" alt="plus" />
       </button>
@@ -38,7 +36,7 @@
   </div>
   <div class="default-col inner-col flex-col justify-content-center">
     <div>
-      <h4 class="total mb-0">{{ product?.price * product?.count }}€</h4>
+      <h4 class="total mb-0">{{ product.count * product.price }}€</h4>
     </div>
   </div>
 </div>
