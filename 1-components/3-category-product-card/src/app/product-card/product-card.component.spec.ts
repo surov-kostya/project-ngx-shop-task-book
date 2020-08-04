@@ -7,8 +7,6 @@ import { productData } from '../../../../../shared/mocks/mock-product';
 describe('[Moдуль 1]  Компонент товара', () => {
   let fixture: ComponentFixture<CategoryProductComponent>;
   let component: CategoryProductComponent;
-  let toCartSpy: jasmine.Spy;
-  let goToProductSpy: jasmine.Spy;
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [CategoryProductComponent],
@@ -17,19 +15,16 @@ describe('[Moдуль 1]  Компонент товара', () => {
     component = fixture.componentInstance;
     (component as any).product = productData;
     fixture.detectChanges();
-    spyOn(component as any, 'addToBasket').and.callThrough();
-    toCartSpy = spyOn((component as any).toCart, 'emit').and.callThrough();
-    spyOn(component as any, 'redirectTo').and.callThrough();
-    goToProductSpy = spyOn(
-      (component as any).goToProduct,
-      'emit'
-    ).and.callThrough();
   });
 
-  it('компонент должен иметь метод addToBasket и Output свойства toCart', () => {
-    expect((component as any).toCart).toBeTruthy();
+  it('компонент должен иметь публичный метод "addToBasket()"', () => {
     expect((component as any).addToBasket).toBeTruthy();
   });
+
+  it('компонент должен иметь публичный Output свойство toCart', () => {
+    expect((component as any).toCart).toBeTruthy();
+  });
+
   it('компонент должен иметь метод redirectTo и Output свойства goToProduct', () => {
     expect((component as any).goToProduct).toBeTruthy();
     expect((component as any).redirectTo).toBeTruthy();
@@ -43,11 +38,32 @@ describe('[Moдуль 1]  Компонент товара', () => {
     expect(component.hasOwnProperty('product')).toBeTruthy();
   });
   it('клик на кнопку "Добавить в корзину" должен вызывать метод addToBasket()', () => {
+    spyOn(component as any, 'addToBasket').and.callThrough();
+    const toCartSpy = spyOn(
+      (component as any).toCart,
+      'emit'
+    ).and.callThrough();
     const icon = fixture.debugElement.query(By.css('.btn'));
     icon.triggerEventHandler('click', null);
     expect((component as any).addToBasket).toHaveBeenCalledBefore(toCartSpy);
     expect((component as any).toCart.emit).toHaveBeenCalled();
   });
+
+  //
+  it('клик на кнопку "Добавить в корзину" должен вызывать метод addToBasket()', () => {
+    spyOn(component as any, 'redirectTo').and.callThrough();
+    const goToProductSpy = spyOn(
+      (component as any).goToProduct,
+      'emit'
+    ).and.callThrough();
+    const icon = fixture.debugElement.query(By.css('.btn'));
+    icon.triggerEventHandler('click', null);
+    expect((component as any).redirectTo).toHaveBeenCalledBefore(
+      goToProductSpy
+    );
+    expect((component as any).goToProduct.emit).toHaveBeenCalled();
+  });
+  //
 
   it('тег с селектором .product-name должен правильно интерполировать имя товара', () => {
     const titleEL = fixture.debugElement.query(By.css('.product-name'));

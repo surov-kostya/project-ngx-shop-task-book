@@ -10,9 +10,9 @@ export class AppComponent {
   public product = cartProducts[0];
   public terminalMessage = '';
   public increment() {
-    // this.terminalMessage = 'Увеличение количества товара';
+    this.terminalMessage = 'Увеличение количества товара';
   }
   public decrement() {
-    // this.terminalMessage = 'Уменьшение количества товара';
+    this.terminalMessage = 'Уменьшение количества товара';
   }
 }

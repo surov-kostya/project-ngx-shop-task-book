@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "start:1-components_1-shop-card": "npm start -- 1-components_1-shop-card",
-    "test:1-components_1-shop-card": "npm run test -- 1-components_1-shop-card",
+    "test:1-components_1-shop-card": "npm run test -- 1-components_1-shop-card ",
     "lint:1-components_1-shop-card": "npm run lint -- 1-components_1-shop-card",
     "start:1-components_2-footer": "npm start -- 1-components_2-footer",
     "test:1-components_2-footer": "npm run test -- 1-components_2-footer",

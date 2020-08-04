@@ -29,6 +29,11 @@ module.exports = function (config) {
     browsers: ["Chrome"],
     // singleRun: true,
     singleRun: false,
+    client: {
+      jasmine: {
+        random: false,
+      },
+    },
     restartOnFileChange: true,
   });
 };

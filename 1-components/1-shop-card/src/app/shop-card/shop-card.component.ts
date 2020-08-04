@@ -16,8 +16,12 @@ export class ShopCardComponent {
 
   public decrementProductInCart(product: IProduct): void {
     if (product && product.count > 1) {
+      product.count--;
       this.decrement.emit();
     }
   }
-  public incrementProductInCart(product: IProduct): void {}
+  public incrementProductInCart(product: IProduct): void {
+    product.count++;
+    this.increment.emit();
+  }
 }

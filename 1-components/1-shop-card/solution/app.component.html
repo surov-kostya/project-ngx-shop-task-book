@@ -73,13 +73,15 @@
   <div class="content-wrap">
     <div class="content-block">
       <app-shop-card
-        [product]="product"
-        (decrement)="decrement()"
         (increment)="increment()"
+        (decrement)="decrement()"
+        [product]="product"
       ></app-shop-card>
     </div>
     <div class="terminal">
-      <pre class="terminalValue">{{ terminalMessage }}</pre>
+      <pre class="terminalValue">
+        {{ terminalMessage }}
+      </pre>
     </div>
   </div>
 </div>
