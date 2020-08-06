@@ -6,12 +6,12 @@ import { productData } from '../../../../shared/mocks/mock-product';
 })
 export class AppComponent {
   public productData = productData;
-  public terminalMessage: string;
-  public title = '1. Интерполяция и связывание';
-  public toCart(event: string) {
-    this.terminalMessage = event;
+  public terminalMessage = '';
+  public title = 'Компонент товара в категории';
+  public toCart() {
+    this.terminalMessage = 'Вы добавили товар в корзину';
   }
-  public goToProduct(event: string) {
-    this.terminalMessage = event;
+  public goToProduct() {
+    this.terminalMessage = 'Переход на компонент товара';
   }
 }

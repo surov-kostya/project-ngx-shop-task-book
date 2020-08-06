@@ -13,8 +13,15 @@ import {
 })
 export class CategoryProductComponent {
   @Input()
-  public product: IProduct;
-  ngOnInit() {
-    console.log(this.product);
+  public product!: IProduct;
+  @Output()
+  public toCart: EventEmitter<string> = new EventEmitter<string>();
+  @Output()
+  public goToProduct: EventEmitter<string> = new EventEmitter<string>();
+  public addToBasket(): void {
+    this.toCart.emit();
+  }
+  public redirectTo(): void {
+    this.goToProduct.emit();
   }
 }

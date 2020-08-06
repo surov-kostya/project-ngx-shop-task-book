@@ -7,12 +7,13 @@ import { Component } from '@angular/core';
 })
 // @ts-ignore
 export class AppComponent {
-  public product = cartProducts[0];
+  public product;
+  //  = cartProducts[0];
   public terminalMessage = '';
-  public increment() {
-    this.terminalMessage = 'Увеличение количества товара';
-  }
-  public decrement() {
-    this.terminalMessage = 'Уменьшение количества товара';
-  }
+  // public decrement() {
+  //   this.terminalMessage = 'Уменьшение количества товара';
+  // }
+  // public increment() {
+  //   this.terminalMessage = 'Увеличение количества товара';
+  // }
 }

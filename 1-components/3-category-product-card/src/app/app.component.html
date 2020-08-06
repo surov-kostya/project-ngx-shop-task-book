@@ -74,11 +74,15 @@
     <div class="content-block">
       <ngx-shop-content-product
         [product]="productData"
+        (goToProduct)="goToProduct($event)"
+        (toCart)="toCart($event)"
       ></ngx-shop-content-product>
     </div>
     <div class="terminal">
       <pre>
-        <p>{{ terminalMessage}}</p>
+        <p  class='terminalValue'>
+         {{ terminalMessage}}
+        </p>
       </pre>
     </div>
   </div>
