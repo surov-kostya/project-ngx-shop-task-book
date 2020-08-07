@@ -13,18 +13,15 @@ import {
 })
 export class CategoryProductComponent {
   @Input()
-  public product!: IProduct;
-
+  public product = {} as IProduct;
   @Output()
   public toCart: EventEmitter<string> = new EventEmitter<string>();
-
   @Output()
   public goToProduct: EventEmitter<string> = new EventEmitter<string>();
-
   public addToBasket(): void {
-    this.toCart.emit('Вы добавили товар в корзину');
+    this.toCart.emit();
   }
   public redirectTo(): void {
-    this.goToProduct.emit('Переход на компонент товара');
+    this.goToProduct.emit();
   }
 }

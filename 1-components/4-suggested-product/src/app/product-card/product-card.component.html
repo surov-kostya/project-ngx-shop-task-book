@@ -1,23 +1,22 @@
-<div class="card-component">
+<div class="card-component" (click)="redirectTo()">
   <div class="card-img-wrap pointer">
-    <img loading="auto" class="card-img-top" />
     <img
       loading="auto"
       class="card-img-top"
-      [src]="
-        'https://meruherbs.com/wp-content/uploads/2017/07/no-product-image-600x600.png'
-      "
-      alt="No product"
+      [src]="product.images[0].url"
+      [alt]="product.name"
     />
   </div>
   <div class="card-body">
-    <h5 class="card-title pointer"></h5>
+    <h5 class="card-title pointer">
+      {{ product.name }}
+    </h5>
     <div>
       <div class="rate">
-        <p class="rate-amount ml-2"></p>
+        <p class="rate-amount ml-2">{{ product.feedbacksCount }}</p>
       </div>
-      <p class="card-text price-text">
-        <strong></strong>
+      <p class="card-text">
+        <strong class="price-text">{{ product.price }}€</strong>
       </p>
     </div>
   </div>

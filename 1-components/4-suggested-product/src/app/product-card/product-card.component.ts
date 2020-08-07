@@ -4,4 +4,13 @@ import { IProduct } from 'shared/interfaces/product.interface';
   selector: 'ngx-shop-product-card',
   templateUrl: './product-card.component.html',
 })
-export class ProductCardComponent {}
+export class ProductCardComponent {
+  @Input()
+  public product!: IProduct;
+  @Output()
+  public goToProduct: EventEmitter<void> = new EventEmitter<void>();
+
+  public redirectTo(): void {
+    this.goToProduct.emit();
+  }
+}

@@ -1,12 +1,12 @@
-<div class="product-list-box-category">
-  <div (click)="redirectTo()" class="inner-col description-col">
+<div class="product-list-box">
+  <div class="inner-col description-col" (click)="redirectTo()">
     <div class="product-img pointer">
       <img
-        [src]="(product?.images)[0].url"
         loading="auto"
         class="img"
+        [src]="product.images[0].url"
+        [alt]="product.name"
         width="80"
-        [alt]="product?.name"
       />
     </div>
 
@@ -18,8 +18,8 @@
         {{ product?.feedbacksCount }} отзыва
       </p>
 
-      <p class="price-text mb-0 mt-2 d-inline-block d-md-none">
-        <strong>{{ product?.price }}€ </strong>
+      <p class="price-text-media mb-0 mt-2 d-inline-block d-md-none">
+        <strong> {{ product?.price }}€ </strong>
       </p>
     </div>
   </div>
@@ -28,9 +28,9 @@
     <h4 class="col-title price-text mb-2">{{ product?.price }}€</h4>
     <div class="button-wrap">
       <button
-        (click)="addToBasket()"
         type="button"
-        class="btn btn-outline-primary"
+        (click)="addToBasket()"
+        class="btn btn-outline-primary add-to-cart-btn"
       >
         Добавить в корзину
       </button>

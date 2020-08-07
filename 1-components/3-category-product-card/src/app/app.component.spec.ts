@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 import { CategoryProductComponent } from './product-card/product-card.component';
 import { productData } from 'shared/mocks/mock-product';
 
-xdescribe('[Модуль1: Category product card: app.component.spec]', () => {
+describe('[Модуль1: Category product card: app.component.spec]', () => {
   let fixture: ComponentFixture<AppComponent>;
   let component: AppComponent;
   beforeEach(() => {
@@ -35,10 +35,10 @@ xdescribe('[Модуль1: Category product card: app.component.spec]', () => {
   it('компонент должен иметь публичный метод: "toCart"', () => {
     expect((component as any).toCart).toBeTruthy();
   });
-  it('компонент должен иметь oпубличный метод: "goToProduct"', () => {
+  it('компонент должен иметь публичный метод: "goToProduct"', () => {
     expect((component as any).goToProduct).toBeTruthy();
   });
-  it('компонент должен иметь oпубличный метод: "goToProduct"', () => {
+  it('компонент должен иметь публичный метод: "goToProduct"', () => {
     expect((component as any).goToProduct).toBeTruthy();
   });
   //  tslint:disable-next-line:max-line-length
@@ -51,15 +51,6 @@ xdescribe('[Модуль1: Category product card: app.component.spec]', () => {
     );
   });
 
-  // it('при клике на кнопку с селектором .add-to-cart-btn, должно меняться значение переменной "terminalMessage" на строку: "Вы добавили товар в корзину"', () => {
-  //   const addToCertBtn = fixture.debugElement
-  //     .query(By.directive(CategoryProductComponent))
-  //     .query(By.css('.add-to-cart-btn'));
-  //   addToCertBtn.triggerEventHandler('click', null);
-  //   expect((component as any)?.terminalMessage).toEqual(
-  //     'Вы добавили товар в корзину'
-  //   );
-  // });
   it('должен вызываться публичный метод toCart()', () => {
     const toCartSpy = spyOn(component as any, 'toCart').and.callThrough();
     (component as any).toCart();
@@ -80,6 +71,7 @@ xdescribe('[Модуль1: Category product card: app.component.spec]', () => {
       'Вы добавили товар в корзину'
     );
   });
+  // tslint:disable-next-line:max-line-length
   it('при вызове функции goToProduct(), должно меняться значение переменной "terminalMessage" на строку: "Переход на компонент товара"', () => {
     (component as any).goToProduct();
     expect((component as any)?.terminalMessage).toEqual(
@@ -87,23 +79,23 @@ xdescribe('[Модуль1: Category product card: app.component.spec]', () => {
     );
   });
 
-  // xit('должен вызываться публичный метод toCart(), при клике на кнопку с селектором .add-to-cart-btn', () => {
-  //   const addToCartSry = spyOn(component as any, 'toCart').and.callThrough();
-  //   const addToCertBtn = fixture.debugElement
-  //     .query(By.directive(CategoryProductComponent))
-  //     .query(By.css('.add-to-cart-btn'));
-  //   addToCertBtn.triggerEventHandler('click', null);
-  //   expect(addToCartSry).toHaveBeenCalled();
-  // });
-  // xit('должен вызываться публичный метод redirectTo(), при клике на кнопку с селектором .description-col', () => {
-  //   const addToCartSry = spyOn(
-  //     component as any,
-  //     'goToProduct'
-  //   ).and.callThrough();
-  //   const addToCertBtn = fixture.debugElement
-  //     .query(By.directive(CategoryProductComponent))
-  //     .query(By.css('.description-col'));
-  //   addToCertBtn.triggerEventHandler('click', null);
-  //   expect(addToCartSry).toHaveBeenCalled();
-  // });
+  xit('должен вызываться публичный метод toCart(), при клике на кнопку с селектором .add-to-cart-btn', () => {
+    const addToCartSry = spyOn(component as any, 'toCart').and.callThrough();
+    const addToCertBtn = fixture.debugElement
+      .query(By.directive(CategoryProductComponent))
+      .query(By.css('.add-to-cart-btn'));
+    addToCertBtn.triggerEventHandler('click', null);
+    expect(addToCartSry).toHaveBeenCalled();
+  });
+  xit('должен вызываться публичный метод redirectTo(), при клике на кнопку с селектором .description-col', () => {
+    const addToCartSry = spyOn(
+      component as any,
+      'goToProduct'
+    ).and.callThrough();
+    const addToCertBtn = fixture.debugElement
+      .query(By.directive(CategoryProductComponent))
+      .query(By.css('.description-col'));
+    addToCertBtn.triggerEventHandler('click', null);
+    expect(addToCartSry).toHaveBeenCalled();
+  });
 });

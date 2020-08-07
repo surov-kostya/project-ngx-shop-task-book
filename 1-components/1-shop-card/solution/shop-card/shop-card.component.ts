@@ -12,7 +12,7 @@ export class ShopCardComponent {
   @Output()
   public increment: EventEmitter<void> = new EventEmitter<void>();
   @Input()
-  public product: IProduct;
+  public product = {} IProduct;
 
   public decrementProductInCart(product: IProduct): void {
     if (product && product.count > 1) {

@@ -11,33 +11,29 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
     TestBed.configureTestingModule({
       declarations: [ShopCardComponent],
     });
-  });
-
-  it('компонент должен иметь кастомное Event Emitter событие "increment"', () => {
     fixture = TestBed.createComponent(ShopCardComponent);
     component = fixture.componentInstance;
+  });
+
+  // TODO not available property
+  // it('компонент должен иметь кастомное свойство "product" с типизацией IProduct', () => {
+  //   expect((component as any).product).toBeTruthy();
+  // });
+  it('компонент должен иметь кастомное Event Emitter событие "increment"', () => {
     expect((component as any).increment).toBeTruthy();
   });
   it('компонент должен иметь кастомное Event Emitter событие "decrement"', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     expect((component as any).decrement).toBeTruthy();
   });
   // tslint:disable-next-line:max-line-length
   it('компонент должен иметь публичный метод decrementProductInCart(), который должен иметь связывание с событием click кнопки с селектором .count-decrement ', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     expect((component as any).decrementProductInCart).toBeTruthy();
   });
   it('компонент должен иметь публичный метод incrementProductInCart(), который должен иметь связывание с событием click кнопки с селектором .count-increment ', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     expect((component as any).incrementProductInCart).toBeTruthy();
   });
 
   it('тег с селектором .product-name должен правильно интерполировать значение свойства "name" объекта "product"', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
     const prodNameEL = fixture.debugElement.query(By.css('.product-name'));
@@ -46,8 +42,6 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
     expect(prodNameNode.textContent.trim()).toEqual(product.name);
   });
   it('тег img должен иметь правильное связывание свойства "src" c значением свойства product.images[0].url объекта "product" ', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
     const imgWrapEl = fixture.debugElement.query(By.css('.product-picture'));
@@ -59,8 +53,6 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
     expect(imgWrapEl.attributes.src.trim()).toEqual(url);
   });
   it('тег img должен иметь правильное связывание свойства "alt" с свойством name объекта "product"', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
     const imgWrapEl = fixture.debugElement.query(By.css('.product-picture'));
@@ -70,11 +62,9 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
   });
   // tslint:disable-next-line:max-line-length
   it('тег с селектором .price-text должен быть добавлен в шаблон и правильно интерполировать значение свойства "price" объекта "product"', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
-    const { price } = cartProducts[0];
+    const { price } = (component as any).product;
     const priceEl = fixture.debugElement.query(By.css('.price-text'));
     expect(price).toBeTruthy();
     const [{ nativeNode: priceNode }] = priceEl.childNodes;
@@ -83,11 +73,9 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
     ).toEqual(`${price.toString()}`);
   });
   it('тег с селектором .total должен быть добавлен в шаблон и правильно интерполировать значение результирующей цены "product.price * product.count" ', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
-    const { price } = cartProducts[0];
+    const { price } = (component as any).product;
     const totalEl = fixture.debugElement.query(By.css('.total'));
     const counterEl = fixture.debugElement.query(By.css('.counter__value'));
     expect(totalEl).toBeTruthy();
@@ -101,8 +89,6 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
   });
   // tslint:disable-next-line:max-line-length
   it('тег с селектором  .counter__value должен быть добавлен в шаблон и правильно интерполировать значение поля "count" объекта "product"', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
     const { count } = (component as any)?.product;
@@ -113,8 +99,6 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
   });
   // tslint:disable-next-line:max-line-length
   it('при вызове метода decrementProductInCart(), должно уменьшиться значение свойства "count"', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
     const { count } = (component as any).product;
@@ -125,17 +109,13 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
   });
   // tslint:disable-next-line:max-line-length
   it('при вызове метода incrementProductInCart(), должно увеличиться значение свойства "count"', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
-    const { count } = cartProducts[0];
+    const { count } = (component as any).product;
     (component as any).incrementProductInCart();
     expect((component as any).product.count - 1).toEqual(count);
   });
   it('клик на кнопку с селектором .count-increment должен вызывать метод incrementProductInCart()', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
     const incrementSpy = spyOn(
@@ -148,8 +128,6 @@ describe('[Модуль1: Shop card: shop-card.component.spec]', () => {
     expect(incrementSpy).toHaveBeenCalled();
   });
   it('клик на кнопку с селектором .count-decrement должен вызывать метод decrementProductInCart()', () => {
-    fixture = TestBed.createComponent(ShopCardComponent);
-    component = fixture.componentInstance;
     (component as any).product = product;
     fixture.detectChanges();
     const decrementSpy = spyOn(

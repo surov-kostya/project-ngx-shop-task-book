@@ -73,9 +73,9 @@
   <div class="content-wrap">
     <div class="content-block">
       <ngx-shop-content-product
+        (toCart)="toCart()"
+        (goToProduct)="goToProduct()"
         [product]="productData"
-        (goToProduct)="goToProduct($event)"
-        (toCart)="toCart($event)"
       ></ngx-shop-content-product>
     </div>
     <div class="terminal">

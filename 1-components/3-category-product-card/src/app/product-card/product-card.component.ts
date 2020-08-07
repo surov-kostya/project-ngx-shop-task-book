@@ -13,7 +13,7 @@ import {
 })
 export class CategoryProductComponent {
   @Input()
-  public product!: IProduct;
+  public product = {} as IProduct;
   @Output()
   public toCart: EventEmitter<string> = new EventEmitter<string>();
   @Output()
