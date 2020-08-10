@@ -4,16 +4,15 @@
       <div>
         <a class="navbar-brand" routerLink=""><strong>NgShop</strong></a>
       </div>
-      <a
-        class="basket basket_not-empty"
-        (click)='redirectTo()'
-      >
+      <a class="basket basket_not-empty" (click)="redirectTo()">
         <img
           loading="auto"
           src="assets/icons/icon-basket.svg"
           alt="menu icon"
         />
-        <span class="product-counter">{{ counter }} </span>
+        <span class="product-counter">
+          {{ counter }}
+        </span>
       </a>
     </div>
   </nav>

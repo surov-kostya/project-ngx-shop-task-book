@@ -13,8 +13,6 @@ describe('[Moдуль 1: Suggested product card: product-card.component.spec ]',
     });
     fixture = TestBed.createComponent(ProductCardComponent);
     component = fixture.componentInstance;
-    (component as any).product = productData;
-    fixture.detectChanges();
   });
   // is it defined
   it('компонент должен иметь публичный метод "redirectTo()"', () => {
@@ -27,10 +25,12 @@ describe('[Moдуль 1: Suggested product card: product-card.component.spec ]',
     expect((component as any).goToProduct).toBeInstanceOf(EventEmitter);
   });
   it('компонент должен иметь кастомное свойство "product"', () => {
-    expect(component.hasOwnProperty('product')).toBeTruthy();
+    expect((component as any).product).toBeTruthy();
   });
   // is it interpolated correctly
   it('тег с селектором .card-title должен правильно интерполировать значение свойства "name" объекта "product"', () => {
+    (component as any).product = productData;
+    fixture.detectChanges();
     const titleEL = fixture.debugElement.query(By.css('.card-title'));
     expect(titleEL).toBeTruthy();
     const { name } = (component as any)?.product;
@@ -38,6 +38,8 @@ describe('[Moдуль 1: Suggested product card: product-card.component.spec ]',
     expect(titleNode.textContent.trim()).toEqual(name);
   });
   it('тег img должен иметь правильное связывание свойствa "src" c свойством "images[0].url" объекта "product"', () => {
+    (component as any).product = productData;
+    fixture.detectChanges();
     const imgEL = fixture.debugElement.query(By.css('.card-img-top'));
     expect(imgEL).toBeTruthy();
     const {
@@ -46,12 +48,16 @@ describe('[Moдуль 1: Suggested product card: product-card.component.spec ]',
     expect(imgEL.attributes.src.trim()).toEqual(url);
   });
   it('тег img должен иметь правильное связывание свойствa "alt" с свойством "name" объекта "product"', () => {
+    (component as any).product = productData;
+    fixture.detectChanges();
     const imgEL = fixture.debugElement.query(By.css('.card-img-top'));
     expect(imgEL).toBeTruthy();
     const { name } = (component as any)?.product;
     expect(imgEL.attributes.alt).toEqual(name);
   });
   it('тег с селектором .rate-amount должен правильно интерполировать значение свойства "feedbacksCount" объекта "product"', () => {
+    (component as any).product = productData;
+    fixture.detectChanges();
     const rateEL = fixture.debugElement.query(By.css('.rate-amount'));
     expect(rateEL).toBeTruthy();
     const { feedbacksCount } = (component as any)?.product;
@@ -61,6 +67,8 @@ describe('[Moдуль 1: Suggested product card: product-card.component.spec ]',
     );
   });
   it('тег с селектором .price-text должен правильно интерполировать значение свойства "price" объекта "product"', () => {
+    (component as any).product = productData;
+    fixture.detectChanges();
     const titleEL = fixture.debugElement.query(By.css('.price-text'));
     expect(titleEL).toBeTruthy();
     const { price } = (component as any)?.product;
@@ -85,12 +93,12 @@ describe('[Moдуль 1: Suggested product card: product-card.component.spec ]',
     icon.triggerEventHandler('click', null);
     expect(redirectToSpy).toHaveBeenCalled();
   });
-  // xit('при вызове метода "redirectTo()" должно эмиттится кастомное событие "goToProduct"', () => {
-  //   const goToProductSpy = spyOn(
-  //     (component as any).goToProduct,
-  //     'emit'
-  //   ).and.callThrough();
-  //   (component as any).redirectTo();
-  //   expect(goToProductSpy).toHaveBeenCalled();
-  // });
+  it('при вызове метода "redirectTo()" должно эмиттится кастомное событие "goToProduct"', () => {
+    const goToProductSpy = spyOn(
+      (component as any).goToProduct,
+      'emit'
+    ).and.callThrough();
+    (component as any).redirectTo();
+    expect(goToProductSpy).toHaveBeenCalled();
+  });
 });

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  public terminalMessage: string;
+  public terminalMessage = '';
   public title = 'Suggested product component';
   public product = productData;
   public redirectTo() {

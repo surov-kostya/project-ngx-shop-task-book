@@ -6,10 +6,9 @@ import { IProduct } from 'shared/interfaces/product.interface';
 })
 export class ProductCardComponent {
   @Input()
-  public product!: IProduct;
+  public product = {} as IProduct;
   @Output()
   public goToProduct: EventEmitter<void> = new EventEmitter<void>();
-
   public redirectTo(): void {
     this.goToProduct.emit();
   }

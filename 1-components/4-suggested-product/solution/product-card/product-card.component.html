@@ -8,15 +8,13 @@
     />
   </div>
   <div class="card-body">
-    <h5 class="card-title pointer">
-      {{ product.name }}
-    </h5>
+    <h5 class="card-title pointer">{{ product?.name }}</h5>
     <div>
       <div class="rate">
         <p class="rate-amount ml-2">{{ product.feedbacksCount }}</p>
       </div>
-      <p class="card-text price-text">
-        <strong>{{ product.price }}€</strong>
+      <p class="card-text">
+        <strong class="price-text">{{ product?.price }}€</strong>
       </p>
     </div>
   </div>

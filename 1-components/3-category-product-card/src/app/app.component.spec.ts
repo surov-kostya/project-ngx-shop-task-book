@@ -21,7 +21,7 @@ describe('[Модуль1: Category product card: app.component.spec]', () => {
     );
     expect(categoryProductEL).toBeTruthy();
   });
-  it('компонент должен иметь кастомное свойство: "productData"', () => {
+  it('компонент должен иметь свойство: "productData"', () => {
     (component as any).productData === undefined
       ? expect((component as any).productData).toBeUndefined()
       : expect((component as any).productData).toEqual(productData);
@@ -34,9 +34,6 @@ describe('[Модуль1: Category product card: app.component.spec]', () => {
   });
   it('компонент должен иметь публичный метод: "toCart"', () => {
     expect((component as any).toCart).toBeTruthy();
-  });
-  it('компонент должен иметь публичный метод: "goToProduct"', () => {
-    expect((component as any).goToProduct).toBeTruthy();
   });
   it('компонент должен иметь публичный метод: "goToProduct"', () => {
     expect((component as any).goToProduct).toBeTruthy();

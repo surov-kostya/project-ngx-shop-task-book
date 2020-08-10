@@ -1,22 +1,15 @@
-<div class="card-component" (click)="redirectTo()">
+<div class="card-component">
   <div class="card-img-wrap pointer">
-    <img
-      loading="auto"
-      class="card-img-top"
-      [src]="product.images[0].url"
-      [alt]="product.name"
-    />
+    <img loading="auto" class="card-img-top" />
   </div>
   <div class="card-body">
-    <h5 class="card-title pointer">
-      {{ product.name }}
-    </h5>
+    <h5 class="card-title pointer"></h5>
     <div>
       <div class="rate">
-        <p class="rate-amount ml-2">{{ product.feedbacksCount }}</p>
+        <p class="rate-amount ml-2"></p>
       </div>
       <p class="card-text">
-        <strong class="price-text">{{ product.price }}€</strong>
+        <strong class="price-text">€</strong>
       </p>
     </div>
   </div>

@@ -1,4 +1,3 @@
-import { productData } from '../mocks/mock-product';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,9 +6,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public terminalMessage: string;
-  public title = 'Suggested product component';
-  public product = productData;
+  public title = 'Header';
   public redirectTo() {
-    this.terminalMessage = 'Переход на компонент продукта';
+    this.terminalMessage = 'Переход на компонент корзины';
   }
 }

@@ -50,7 +50,7 @@
       </g>
     </svg>
 
-    <span>{{ title }}</span>
+    <span class="title">{{ title }}</span>
 
     <svg
       id="rocket-smoke"
@@ -72,11 +72,11 @@
 
   <div class="content-wrap">
     <div class="content-block">
-      <ngx-shop-header></ngx-shop-header>
+      <ngx-shop-header (goToBasket)="redirectTo()"></ngx-shop-header>
     </div>
     <div class="terminal">
       <pre>
-        <p *ngIf ='terminalMessage'>{{ terminalMessage}}</p>
+        <p class='terminalMessage'>{{terminalMessage}}</p>
       </pre>
     </div>
   </div>

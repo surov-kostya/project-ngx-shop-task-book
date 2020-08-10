@@ -17,6 +17,7 @@ describe('[Модуль1: Category product card: product-card.component.spec]', 
   });
   //  is it defined
   it('компонент должен иметь кастомное свойство "product"', () => {
+    console.log((component as any).product);
     expect((component as any).product).toBeTruthy();
   });
   it('компонент должен иметь публичный метод "addToBasket()"', () => {

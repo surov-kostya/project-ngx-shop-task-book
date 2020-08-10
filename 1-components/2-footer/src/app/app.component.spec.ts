@@ -11,7 +11,6 @@ describe('[Модуль1: Footer: app.component.spec]', () => {
       declarations: [AppComponent, FooterComponent],
     });
     fixture = TestBed.createComponent(AppComponent);
-
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
@@ -24,7 +23,7 @@ describe('[Модуль1: Footer: app.component.spec]', () => {
   });
 
   it('компонент должен иметь публичное  свойство "title"', () => {
-    expect((component as any).currentYear).toBeTruthy();
+    expect((component as any).title).toBeTruthy();
   });
   it('компонент ngx-shop-footer добавлен в html шаблон', () => {
     const shopCardEL = fixture.debugElement.query(

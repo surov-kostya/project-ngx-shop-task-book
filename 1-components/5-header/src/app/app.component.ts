@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
+  public terminalMessage = '';
   public title = 'Header';
-  public terminalMessage: string;
-  public goToBasket() {
-    this.terminalMessage = 'Переход в компонент корзины';
+  public redirectTo() {
+    this.terminalMessage = 'Переход на компонент корзины';
   }
 }

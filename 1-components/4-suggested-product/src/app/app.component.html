@@ -72,15 +72,11 @@
 
   <div class="content-wrap">
     <div class="content-block">
-      <ngx-shop-product-card
-        style="margin: 0 auto;"
-        (goToProduct)="redirectTo()"
-        [product]="product"
-      ></ngx-shop-product-card>
+      <ngx-shop-product-card style="margin: 0 auto;"></ngx-shop-product-card>
     </div>
     <div class="terminal">
       <pre>
-        <p *ngIf ='terminalMessage'>{{ terminalMessage}}</p>
+        <p class='terminalValue' >{{ terminalMessage}}</p>
       </pre>
     </div>
   </div>

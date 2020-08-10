@@ -75,11 +75,12 @@
       <ngx-shop-product-card
         (goToProduct)="redirectTo()"
         [product]="product"
+        style="margin: 0 auto;"
       ></ngx-shop-product-card>
     </div>
     <div class="terminal">
       <pre>
-        <p *ngIf ='terminalMessage'>{{ terminalMessage}}</p>
+        <p class='terminalValue' >{{ terminalMessage}}</p>
       </pre>
     </div>
   </div>
