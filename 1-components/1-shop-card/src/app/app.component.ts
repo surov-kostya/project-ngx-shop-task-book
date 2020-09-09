@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { cartProduct, ICartProduct } from '../../../../shared/mocks/1-components/cart-product';
+import {
+  cartProduct,
+  ICartProduct,
+} from '../../../../shared/mocks/1-components/cart-product';
 
 @Component({
   selector: 'app-root',
