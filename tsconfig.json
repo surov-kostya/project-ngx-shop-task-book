@@ -38,22 +38,22 @@
       "path": "./1-components/5-header/src/tsconfig.spec.json"
     },
     {
-      "path": "./2-pipe/1-image-url-pipe/src/tsconfig.app.json"
+      "path": "./2-pipe/1-transforms-with-pipe/src/tsconfig.app.json"
     },
     {
-      "path": "./2-pipe/1-image-url-pipe/src/tsconfig.spec.json"
+      "path": "./2-pipe/1-transforms-with-pipe/src/tsconfig.spec.json"
     },
     {
-      "path": "./2-pipe/2-rate-pipe/src/tsconfig.app.json"
+      "path": "./2-pipe/1-transforms-with-pipe/src/tsconfig.app.json"
     },
     {
-      "path": "./2-pipe/2-rate-pipe/src/tsconfig.spec.json"
+      "path": "./2-pipe/1-transforms-with-pipe/src/tsconfig.spec.json"
     },
     {
-      "path": "./2-pipe/3-review-pipe/src/tsconfig.app.json"
+      "path": "./2-pipe/1-transforms-with-pipe/src/tsconfig.app.json"
     },
     {
-      "path": "./2-pipe/3-review-pipe/src/tsconfig.spec.json"
+      "path": "./2-pipe/1-transforms-with-pipe/src/tsconfig.spec.json"
     },
     {
       "path": "./3-directive/1-home-component/src/tsconfig.app.json"
